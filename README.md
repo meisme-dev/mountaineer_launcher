@@ -1,1 +1,2 @@
-# mountaineer_launcher
+# Screenshots
+assets/screenshot0.png
