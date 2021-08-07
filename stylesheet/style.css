@@ -1,0 +1,244 @@
+@keyframes leftslide {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes rightslide {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes topslide {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    background-attachment: fixed;
+    overflow:hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 33%;
+}
+
+.title {  
+    animation: 2s ease-out 0s 1 leftslide;
+    backdrop-filter:blur(5px);
+    background-color: rgba(17, 17, 17, 0.55);
+    margin-top: 0;
+}
+
+.container {
+    animation: 2s ease-out 0s 1 rightslide;
+    backdrop-filter:blur(50px);
+    overflow: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    background-color: rgba(17, 17, 17, 0.55);
+    margin-left: 3%;
+    margin-right: 54%;
+    height: auto;
+    max-height: 75%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.login {
+  animation: 2s ease-out 0s 1 rightslide;
+  backdrop-filter:blur(15px);
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.45);
+  margin-right: 50%;
+  padding-left: 15px;
+  padding-top: 15px;
+  display:grid;
+  align-content: center;
+}
+
+.list{
+  text-align: left;
+}
+
+.Box{
+  margin: auto;
+  float: left;
+}
+
+.titleheader{
+  text-align: center;
+  font-size: 24pt;
+  padding-bottom: 24px;
+  font-weight: normal;
+  grid-row: 1;
+}
+
+#emailBox{
+  outline: none;
+  transition: 0.3s;
+  border-radius: 7px;
+  border: none;
+  background-color: rgba(197, 197, 197, 0.45);
+  height: 32px;
+  width: 75%;
+  color:white;
+  grid-row: 2;
+  padding-left: 15px;
+  padding-top: 2px;
+  font-size: 18px;
+}
+
+#passwordBox{
+  outline: none;
+  transition: 0.3s;
+  border-radius: 7px;
+  border: none;
+  background-color: rgba(197, 197, 197, 0.45);
+  height: 32px;
+  width: 75%;
+  margin-top: 24px;
+  color:white;
+  grid-row: 3;
+  padding-left: 15px;
+  padding-top: 2px;
+  font-size: 18px;
+}
+
+.loginButton{
+  transition: 0.3s;
+  margin-top: 42px;
+  grid-row: 4;
+  border-radius: 7px;
+  background-color: rgba(197, 197, 197, 0.45);
+  border: none;
+  color: white;
+  height: 42px;
+  width: 100px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.microsoftButton{
+  transition: 0.3s;
+  grid-row: 6;
+  border-radius: 7px;
+  background-color: rgba(197, 197, 197, 0.45);
+  border: none;
+  color: white;
+  height: 42px;
+  width: 250px;
+  font-size: 18px;
+}
+
+.or{
+  grid-row: 5;
+}
+
+.logo{
+  height: 84px;
+  position: absolute; 
+  top: 48px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+#emailBox:hover{
+  transform: scale(1.05);
+}
+
+#passwordBox:hover{
+  transform: scale(1.05);
+}
+
+.loginButton:hover{
+  transform: scale(1.1);
+}
+
+.microsoftButton:hover{
+  transform: scale(1.1);
+}
+
+#passwordBox:focus{
+  transform: scale(1.05);
+}
+
+#passwordBox:focus{
+  transform: scale(1.05);
+}
+
+.loginButton:focus{
+  transform: scale(1.1);
+}
+
+.microsoftButton:focus{
+  transform: scale(1.1);
+}
+
+h1{
+  font-size: 42px;
+}
+
+.hamburger{
+  margin-right: 125%;
+  height: 33px;
+  width: 33px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  font-size: 18px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.116);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(7, 7, 7, 0.452); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(39, 39, 39, 0.788); 
+}

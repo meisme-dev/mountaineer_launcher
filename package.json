@@ -1,0 +1,19 @@
+{
+  "name": "mountaineer",
+  "version": "0.0.1",
+  "description": "Official launcher for the free and open source Mountaineer client.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "meisme-dev",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.1.7"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
+    "less": "^4.1.1",
+    "yggdrasil": "^1.6.0"
+  }
+}
